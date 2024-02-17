@@ -29,7 +29,7 @@ const NavItem = () => {
                 {/* header top start */}
                 <div className={`header-top d-md-none ${socialToggle ? "open" : ""}`}>
                     <div className="container">
-                        {user ? <div className="d-md-block">
+                        {user ? <div className="d-sm-block d-md-none">
                             <div class="btn-group dropstart">
                                 <button
                                     type="button"
@@ -121,7 +121,7 @@ const NavItem = () => {
                                                     <span className='bg-light p-2 fw-bold border rounded-circle fs-5'> {user.email ? user.email.substring(0, 2).toUpperCase() : ""}</span>
                                                 )}
                                             </button>
-                                            <ul class="dropdown-menu text-left p-2 shadow">
+                                            <ul class="dropdown-menu  p-2 shadow">
                                                 <div className="p-header text-center">
                                                     <div className="d-flex">
                                                         <p> {user.photoURL && <img src={user.photoURL} height={60} width={40} alt="User" className="user-image rounded-circle" />}</p>
@@ -135,9 +135,11 @@ const NavItem = () => {
                                                 <Link className='py-1 bg-light my-1 w-100 fw-bold'><i className='icofont-dashboard mx-2 text-warning'></i>Dashboard</Link>
                                                 <Link className='py-1 bg-light my-1 w-100 fw-bold'><i className="icofont-settings-alt mx-2 text-warning"></i>Setting</Link>
                                                 <hr />
-                                                <button onClick={logOut} className="lab-btn ">
-                                                    <i className='icofont-logout'></i> <span> Logout</span>
-                                                </button>
+                                                <div className='text-center'>
+                                                    <button onClick={logOut} className="lab-btn ">
+                                                        <i className='icofont-logout'></i> <span> Logout</span>
+                                                    </button>
+                                                </div>
                                             </ul>
                                         </div>
                                     </div>

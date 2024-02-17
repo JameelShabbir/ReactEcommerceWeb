@@ -7,6 +7,8 @@ const title = 'Forget Your Password';
 const btnText = 'Forget Now'
 
 const ForgetPassword = () => {
+    // const confirm = confirm('Are you sure you want to reset your password?');
+    // if (confirm) {
     const handleReset = async (e) => {
         e.preventDefault();
         const emailVal = e.target.email.value;
@@ -20,6 +22,7 @@ const ForgetPassword = () => {
                 console.error('Error:', err);
                 alert('Error: ' + err.message);
             });
+        // }
     }
 
     return (

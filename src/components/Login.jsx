@@ -21,7 +21,7 @@ const Login = () => {
         // console.log(email, password);
         login(email, password).then((result) => {
             const user = result.user;
-            alert('Login successfully! ' + user.email)
+            alert('Now You Are LogIn! ' + user.email)
             navigate(from, { replace: true })
         }).catch((error) => {
             const errorMsge = error.message;
