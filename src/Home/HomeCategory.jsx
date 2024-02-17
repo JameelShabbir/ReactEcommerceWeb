@@ -47,7 +47,7 @@ const categoryList = [
 const HomeCategory = () => {
     return (
         <>
-            <p>this is code just for my repo</p>
+            
             <div className="category-section styled-4 padding-tb">
                 <div className="container">
                     {/* header section */}
