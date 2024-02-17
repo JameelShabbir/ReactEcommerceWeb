@@ -47,7 +47,7 @@ const categoryList = [
 const HomeCategory = () => {
     return (
         <>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, laudantium! Iste explicabo dolores placeat error earum doloribus! Velit, architecto ipsa molestiae repudiandae quia enim dolor. Assumenda saepe minima fuga quae?</p>
+            {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, laudantium! Iste explicabo dolores placeat error earum doloribus! Velit, architecto ipsa molestiae repudiandae quia enim dolor. Assumenda saepe minima fuga quae?</p> */}
             <div className="category-section styled-4 padding-tb">
                 <div className="container">
                     {/* header section */}
